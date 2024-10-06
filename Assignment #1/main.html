@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>My Website (D.K)</title> <!--window title-->
+    </head>
+    
+    <body>
+        <header id="header">
+            <div class="header container">
+                <div class="logo">
+                    <h1> <span>D</span>.<span>K</span> </h1>
+                </div>
+                <nav class="navList">
+                    <ul>
+                        <li>
+                            <a href="#home" class="navlink scrollto active">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="navlink scrollto">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="navlink scrollto">
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="navlink scrollto">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        
+        <section id="home">
+            <div class="home container">
+                <div class="Intro">
+                    <h1><span>Hello, </span></h1>
+                    <h1><span>My name is </span></h1>
+                    <h1><span>Daryn King </span></h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="about container">
+                <div class="colLeft">
+                    <div class="aboutImg">
+                        <img src="img/WebandScriptAboutMe.jpeg" alt="Personal Img">
+                    </div>
+                </div>
+                <div class="colRight">
+                    <h1 class="sectionTitle"> <span>About Me</span></h1>
+                    <article>
+                        <h3>Student</h3>
+                        <p>2nd year Networking & IT Security student at Ontario Tech University</p>
+                        <p>Aspiring to be a Cyber Security Expert</p>
+                    </article>
+                    <div class="videoWrapper">
+                        <video width="1024" height="768" controls autoplay muted>
+                            <source src="video/AboutMeVideo.mp4" type="video/mp4">
+                            <source src="video/AboutMeVideo.mov" type="video/mov">
+                            <source src="video/AboutMeVideo.ogg" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projectContainer">
+                <div class="projectsHeader">
+                    <h1 class="sectionTitle"><span>My Projects</span></h1>
+                </div>
+                <div class="allProjects">
+                    <div class="project">
+                        <div class="projectInfo">
+                            <h2>Project #1</h2>
+                            <h3>D20 Probability Game</h3>
+                            <p>2022 Java, made to demonstrate probabilities for math class</p>
+                        </div>
+                        <div class="projectImg">
+                            <img src="img/D20Game.jpg" alt="D20 Img">
+                        </div>
+                    </div> <!--end of project 1-->
+                    
+                    <div class="project">
+                        <div class="projectInfo">
+                            <h2>Project #2</h2>
+                            <h3>Maze Game</h3>
+                            <p>2022 Java, made as a hobby side project </p>
+                        </div>
+                        <div class="projectImg">
+                            <img src="img/MazeGame.png" alt="Maze Game Img">
+                        </div>
+                    </div> <!--end of project 2-->
+                    
+                    <div class="project">
+                        <div class="projectInfo">
+                            <h2>Project #3</h2>
+                            <h3>Encryption Project</h3>
+                            <p>2024 Python, this program takes an inputted message from the user and outputs the encrypted product randomly using 1/8 different encrytion methods.</p>
+                        </div>
+                        <div class="projectImg">
+                            <img src="img/EncryptionProj.png" alt="Encryption Project Img">
+                        </div>
+                    </div> <!--end of project 3-->
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="contact container">
+                <h1 class="sectionTitle"><span>Contact Info</span></h1>
+                <div class="contactItems">
+                    <div class="contactInfo">
+                        <form 
+                            id="contactForm"
+                            action="https://formspree.io/f/mgvewkev" 
+                            method="POST">
+                        <p>Name: </p>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required >
+                        <p>Email: </p>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required >
+                        <p>Subject: </p>
+                        <input
+                            type="text"
+                            name="subjects"
+                            placeholder="Subject"
+                            required >
+                        <p>Message: </p>
+                        <textarea
+                            style="height: 130px;"
+                            name="message"
+                            placeholder="Your Message"
+                            required></textarea>
+                        <div class="btn">
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                        </form> <!--action attribute specifies url where form data will be sent once submitted, in this case url will then sent data to me-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <footer id="footer">
+            <div class="footer container">
+                <h1><span>THANK YOU FOR VISITING MY WEBPAGE</span></h1>
+                <h2>You can reach me at</h2>
+                <h2>daryn.king@ontariotechu.net</h2>
+                <p>Copyright © 2024 All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
