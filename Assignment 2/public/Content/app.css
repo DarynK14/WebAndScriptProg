@@ -1,1 +1,282 @@
+* {
+    box-sizing: border-box; /*ensures padding and border are inc in width and height*/
+    padding: 0; /*resets paddings*/
+    margin: 0; /*resets margins*/
+}
+html {
+    font-size: 12px; /*sets base font size*/
+    scroll-behavior: smooth; /*enables smooth scrolling bt links*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*sets font family for page*/
+    scroll-padding-top: 12vh; /*to prevent header from hiding top of each section*/
+}
+body {
+    background-color: #EDF6F9; /*sets background color for body*/
+    padding-top: 10vh;
+}
+.container {
+    width: 100%; /*full width of viewport*/
+    height: 100%; /*height to full height of parent*/
+    display: flex; /*enables flexbox layout for content alignment*/
+    align-items: center; /*centers vertically*/
+    justify-content: center; /*centers horizontally*/
+}
+section {
+    min-height: 88vh; /*bc header 12vh*/
+    box-sizing: border-box; /*ensures padding and border are inc in width and height*/
+    width: 100vw; /*full width of page*/
+}
+img, video {
+    object-fit: cover; /*ensures img and vid cover their comtainers w/o stretching*/
+    height: auto; /*ensures media retains its apsect ratio*/
+    width: 100%; /*sets media width to ful conatiner width*/
+}
 
+/*HEADER SECTION*/
+#header {
+    position: fixed; /*fixes header in position*/
+    z-index: 1000; /*header always on top of other content*/
+    left: 0; /*align to left*/
+    top: 0; /*aligns to top*/
+    width: 100vw; /*width set to entire viewport width*/
+    background-color: #355E3B;
+    color: #EDF6F9;
+}
+#header .navbar {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #EDF6F9;
+}
+#header .navbar-brand {
+    color: #EDF6F9;
+    font-size: 4vh;
+    text-align: left;
+    flex: 1;
+    text-decoration: none;
+    font-weight: 900;
+}
+#header .navbar-nav {
+    display: flex;
+    flex: 5;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header .navbar-nav li a {
+    color: #EDF6F9;
+}
+#header .navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+#header .navbar-nav .nav-link:hover {
+    color: #A4C59A;
+}
+
+
+/*HOME SECTION*/
+#home {
+    background-image: url(img/HomeBackground.png); /*sets background img*/
+    background-size: cover; /*ensures img covers section w/o stretching*/
+    background-position: center; /*centers background img*/
+    height: 88vh; /*ensures section takes up viewport height (inc header)*/
+    background-color: #4F7942; /*in case background image cant load*/
+}
+#home .container {
+    width: 75vw;
+    margin: auto; /*centers content horizontally*/
+    justify-content: left; /*aligns to left*/
+}
+#home .Intro {
+    text-align: left; /*aligns text to left*/
+    vertical-align: middle; /*aligns to middle vertically*/
+}
+#home .Intro h1 {
+    font-size: 5vh;
+    color: #EDF6F9;
+    font-weight: bold;
+}
+
+/*ABOUT SECTION*/
+#about {
+    background-color: #A4C59A;
+    padding: 2vw;
+    display: flex; 
+    justify-content: center; /*centers horizontally*/
+    align-items: center; /*centers vertically*/
+    padding: 5vh;
+}
+#about .container {
+    height: auto; /*allows container to adjust height based on content*/
+    display: flex;
+    justify-content: space-between; /*enenly distrubutes space bt columns*/
+    align-items: center; /*centers vertically*/
+    width: 80%;
+}
+#about .colRight {
+    background-color: #EDF6F9;
+    background-size: cover; /*ensures background covers column*/
+    border-radius: 7px; /*rounded corners*/
+    width: 40vw;
+    margin: 2vw;
+    box-shadow: 15px 15px #4F7942; /*adds shadow*/
+    font-size: 3vh;
+    color: #191923;
+    vertical-align: middle; /*vertically aligns content in column*/
+    display: flex;
+    flex-direction: column; /*aligns into column*/
+    align-items: center; /*centers vertically*/
+}
+#about .aboutImg img{
+    width: 35vw;
+    border-radius: 50%; /*makes image circular */
+    vertical-align: middle; /*vertically centres img*/
+    display: flex;
+}
+#about .videoWrapper {
+    display: flex;
+    justify-content: center; /*centers horizontally*/
+    align-items: center; /*centers vertically*/
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+#about .videoWrapper video {
+    max-width: 90%; /*limits to 90% videowrapper container*/
+}
+
+/*PROJECTS SECTION*/
+#projects {
+    width: 80vw;
+    margin: 0 auto; /*centres horizontally*/
+    margin-top: 2vh;
+    padding-bottom: 3vh; /*adds padding to bottom*/
+}
+#projects .projectsHeader {
+    text-align: center; /*centres header*/
+    font-size: 3vw;
+    color: #191923;
+    margin-bottom: 1vh; /*adds space below header*/
+}
+#projects .project {
+    border: 4px solid #A4C59A; /*adds border*/
+    border-radius: 7px; /*rounded edges*/
+    box-sizing: border-box;
+    width: auto;   /*auto adjusts width based on content*/
+    max-width: 100%;
+    margin-top: 12px; /*adds space on top of every project*/
+}
+#projects .projectInfo {
+    font-size: 2vw;
+    color: #191923;
+}
+#projects .projectInfo h2 {
+    background-size: cover;    /*ensures background covers the header*/
+    background-color: #A4C59A; 
+    padding: 3px;
+}
+#project .projectInfo, h3, p {
+    margin: 0 10px;
+}
+#projects .projectImg {
+    display: flex;
+    justify-content: center; /*centers horizontally*/
+    align-items: center; /*centers vertically*/
+}
+#projects .projectImg img {
+    width: 90%;
+    height: auto;
+    margin: 6px auto;
+    border-radius: 7px; /*rounded corners*/
+}
+
+/*CONTACT SECTION*/
+#contact {
+    background-color: #A3B18A;
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 2vh;
+    border-radius: 7px; /*rounded corners*/
+    box-shadow: 15px 15px 20px #355E3B; /*adds blurry shadow*/
+    padding: 2vh 5vw;
+}
+#contact .contact.container {
+    display: flex;
+    flex-direction: column; /*aligns content vertically*/
+    max-width: 80vw;
+    margin: 0 auto;
+    align-items: center; /*centers vertically*/
+}
+#contact .sectionTitle {
+    display: flex;
+    font-size: 5vw;
+    color: #191923;
+    margin-top: 15px;
+}
+#contact .contactInfo p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 3vw;
+    color: #191923;
+}
+#contact input , #contact textarea {
+    font-family: inherit; /*inherits global font fam*/
+    background-color: #EDF6F9;
+    border: 3px solid #355E3B; /*sets border to input fields*/
+    border-radius: 4px; /*rounded coners on input fields*/
+    font-size: 2vw;
+    width: 50vw;
+}
+#contact button {
+    font-family: inherit; /*inherits global font fam*/
+    background-color: #EDF6F9;
+    color: #191923;
+    border:3px solid #355E3B;
+    border-radius: 4px; /*rounded corders on button*/
+    font-size: 5vh;
+    padding: 5px;
+    text-align: center; /*centers button text*/
+}
+#contact .btn {
+    display: flex;
+    justify-content: center; /*centers horizontally*/
+}
+#contact button:hover {
+    background-color: #355E3B;
+    color: #EDF6F9;
+}
+
+/*FOOTER*/
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    background-size: cover;
+    min-height: 40px;
+    background: linear-gradient(#4F7942, #355E3B); /*SUBTLE gradient applied to footer background*/
+    margin-bottom: 0px;
+}
+#footer .footer.container {
+    min-height: 25vh;
+    padding: 2vh 5vw;
+    text-align: center;
+    display: block;
+}
+#footer h1 {
+    color: #EDF6F9;
+    font-size: 5vh;
+    margin-top: 3vh;
+}
+#footer h2 {
+    color: #EDF6F9;
+    font-size: 3vh;
+}
+#footer p {
+    color: #A4C59A;
+    font-size: 2vh;
+}

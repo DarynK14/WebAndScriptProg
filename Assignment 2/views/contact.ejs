@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+    
+    <section id="contact">
+        <div class="contact container">
+            <h1 class="sectionTitle"><span>Contact Info</span></h1>
+            <div class="contactItems">
+                <div class="contactInfo">
+                    <form 
+                        id="contactForm"
+                        action="https://formspree.io/f/mgvewkev" 
+                        method="POST">
+                    <p>Name: </p>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required >
+                    <p>Email: </p>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required >
+                    <p>Subject: </p>
+                    <input
+                        type="text"
+                        name="subjects"
+                        placeholder="Subject"
+                        required >
+                    <p>Message: </p>
+                    <textarea
+                        style="height: 130px;"
+                        name="message"
+                        placeholder="Your Message"
+                        required></textarea>
+                    <div class="btn">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                    </form> <!--action attribute specifies url where form data will be sent once submitted, in this case url will then sent data to me-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <%- include('partials/footer') %>
+
+</body>

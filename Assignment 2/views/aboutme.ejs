@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <section id="about">
+        <div class="about container">
+            <div class="colLeft">
+                <div class="aboutImg">
+                    <img src="/Content/img/WebandScriptAboutMe.jpeg" alt="Personal Img">
+                </div>
+            </div>
+            <div class="colRight">
+                <h1 class="sectionTitle"> <span>About Me</span></h1>
+                <article>
+                    <h3>Student</h3>
+                    <p>2nd year Networking & IT Security student at Ontario Tech University</p>
+                    <p>Aspiring to be a Cyber Security Expert</p>
+                </article>
+                <div class="videoWrapper">
+                    <video width="1024" height="768" controls autoplay muted>
+                        <source src="/Content/video/AboutMeVideo.mp4" type="video/mp4">
+                        <source src="/Content/video/AboutMeVideo.mov" type="video/mov">
+                        <source src="/Content/video/AboutMeVideo.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer') %>
+</body>

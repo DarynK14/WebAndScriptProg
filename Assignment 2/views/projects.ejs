@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+    <section id="projects">
+        <div class="projectContainer">
+            <div class="projectsHeader">
+                <h1 class="sectionTitle"><span>My Projects</span></h1>
+            </div>
+            <div class="allProjects">
+            <div class="project">
+                <div class="projectInfo">
+                    <h2>Project #1</h2>
+                    <h3>D20 Probability Game</h3>
+                    <p>2022 Java, made to demonstrate probabilities for math class</p>
+                </div>
+                <div class="projectImg">
+                    <img src="/Content/img/D20Game.jpg" alt="D20 Img">
+                    </div>
+                </div> <!--end of project 1-->
+                        
+                <div class="project">
+                    <div class="projectInfo">
+                        <h2>Project #2</h2>
+                        <h3>Maze Game</h3>
+                        <p>2022 Java, made as a hobby side project </p>
+                    </div>
+                    <div class="projectImg">
+                        <img src="/Content/img/MazeGame.png" alt="Maze Game Img">
+                    </div>
+                </div> <!--end of project 2-->
+                        
+                <div class="project">
+                    <div class="projectInfo">
+                        <h2>Project #3</h2>
+                        <h3>Encryption Project</h3>
+                        <p>2024 Python, this program takes an inputted message from the user and outputs the encrypted product randomly using 1/8 different encrytion methods.</p>
+                    </div>
+                    <div class="projectImg">
+                        <img src="/Content/img/EncryptionProj.png" alt="Encryption Project Img">
+                    </div>
+                </div> <!--end of project 3-->
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
