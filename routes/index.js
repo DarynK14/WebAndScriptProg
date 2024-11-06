@@ -1,11 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
-router.get("*", (req,res) => {
-  res.sendFile(path.resolve(__dirname, "build", "home.ejs"))
-})
-
 /* GET home page. */
 router.get('/home', function(req, res, next) {
   res.render('home', { 

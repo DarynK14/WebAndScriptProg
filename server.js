@@ -13,7 +13,9 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '4000');
-app.set('port', port);
+app.listen(port, () => {
+  console.log('Server running on port ${port}');
+});
 
 /**
  * Create HTTP server.
