@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get("*", (req,res) => {
-  res.sendFile(path.resolve(__dirname, "build", "home.ejs"))
+  res.sendFile(path.resolve(__dirname, "build", "views/index.ejs"))
 })
 
 /* GET home page. */
